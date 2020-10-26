@@ -1,4 +1,10 @@
-# LaTeX PPT Template
+# LaTeX Beamer
+Beamer是LaTeX下用于编译生成PPT文件的工具包。在线编辑LaTeX参照OverLeaf，本地开发可以Clone本仓库中的模板并在此基础上编辑。
+## OverLeaf
+Beamer教程参照[这里](https://www.overleaf.com/learn/latex/beamer)
+OverLeaf官网参照[这里](https://www.overleaf.com/)
+
+## LaTeX PPT Template
 
 Seven awesome latex ppt templates for researchers or students.
 
