@@ -1,0 +1,98 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{utopia} %font utopia imported
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\usepackage{xeCJK}
+\usepackage{etoolbox}
+\usepackage{array}
+% 设置英文默认字体
+\setmainfont{Times New Roman} 
+% 设置中文默认字体
+\setCJKmainfont{FandolFang}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+    decorations.pathreplacing,decorations.pathmorphing,shapes,%
+    matrix,shapes.symbols}
+    
+\tikzset{
+  normal border/.style={orange!30!black!10, decorate, 
+     decoration={random steps, segment length=2.5cm, amplitude=.7mm}},
+  torn border/.style={orange!30!black!5, decorate, 
+     decoration={random steps, segment length=.5cm, amplitude=1.7mm}}}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[NNTracer] %optional
+{NNTracer: 面向深度学习的版本控制工具}
+
+\author[Wang, Xu, Cao] % (optional)
+{王国畅 \and 徐经纬 \and 曹春}
+
+\institute[NJU] % (optional)
+{
+  软件新技术国家重点实验室\\
+  南京大学
+}
+
+\date[NASAC 2020] % (optional)
+{NASAC, 2020}
+
+\logo{\includegraphics[height=1cm]{nju-logo.png}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{目录}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\AtBeginEnvironment{frame}{\setcounter{footnote}{0}}
+%------------------------------------------------------------
+
+
+\begin{document}
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{背景}
+
+
+%---------------------------------------------------------
+\section{相关工作}
+
+%---------------------------------------------------------
+\section{模型追踪}
+
+%---------------------------------------------------------
+\section{工具评估}
+
+%---------------------------------------------------------
+\end{document}
